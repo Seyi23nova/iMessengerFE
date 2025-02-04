@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* DESKTOP */
+body {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+.wrap {
+    flex: 90% 0 0;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: 3px solid rgb(182, 177, 177);
+    padding-top: 5px;
+}
+
+.head {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.buttons {
+    flex: 20% 0 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.button {
+    padding: 5px 10px;
+
+}
+
+.user-profile {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 60px;
+}
+
+.user-img-wrap {
+    width: 70px;
+    height: 70px;
+    clip-path: circle();
+}
+
+.user-name {
+    font-size: 14px;
+    display: block;
+    margin-left: 0;
+}
+
+.user-img {
+    width: 100%;
+    height: 100%;
+}
+
+.org {
+    font-size: 30px;
+    flex: 80% 0 0;
+}
+
+.notifications-section {
+    width: 46.5%;
+    margin-left: 2.5%;
+    margin-top: 50px;
+}
+
+.notifications-list {
+    height: 150px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-top: 1px;
+}
+
+.notification{
+    margin-top: 30px;
+}
+
+.notification-timestamp,
+.notification-message{
+    font-size: 13px;
+}
+.notification-timestamp{
+    color: green;
+}
+
+.notification-message {
+    margin-left: 15px;
+}
+
+.friends-section{
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+}
+
+.friends {
+    flex: 49% 0 0;
+    border: 3px solid rgb(182, 177, 177);
+    border-left: 0px;
+}
+
+.friends-list {
+    height: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.friend {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.img-container {
+    flex: 40px 0 0;
+    height: 40px;
+    clip-path: circle()
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+.name {
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+.details {
+    margin-left: 10px;
+}
+
+.friend-name,
+.friend-location,
+.friend-interests{
+    display: block;
+    font-size: 11px;
+}
+
+.button,
+.accept-button,
+.reject-button,
+.revoke-button,
+.unfriend-button,
+.chat-button
+ {
+    margin-left: 20px;
+    padding: 4px 5px;
+}
+
+.no-reqs{
+    font-size: 13px;
+    margin-top: 30px;
+}
+.friend-requests {
+    flex: 49% 0 0;
+    margin-left: 2%;
+    border: 3px solid rgb(182, 177, 177);
+    border-left: 0px;
+}
+
+.sent-friend-requests {
+    margin-top: 80px;
+}
+
+.middle {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 70px;
+}
+
+.heading {
+    font-size: 20px;
+}
+
+.community {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 80px;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.profile {
+    flex: 30% 0 0;
+    margin-right: 2.5%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-bottom: 70px;
+    cursor: pointer;
+}
+
+.image-wrap {
+    flex: 45% 0 0;
+    margin-right: 5%;
+    height: 150px;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+.details {
+    flex: 45% 0 0;
+    margin-right: 5%;
+}
+
+.span {
+    display: block;
+    font-size: 12.5px;
+    margin-top: 2px;
+}
+
+.add-friend{
+    padding: 3px 5px;
+}
+
+.gif-wrap{
+    width: 100px;
+    height: 100px;
+}
+
+.gif{
+    width: 100%;
+    height: 100%;
+}

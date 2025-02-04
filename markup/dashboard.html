@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../styles/dashboard.css">
+</head>
+<body>
+    <div class="wrap">
+        <section class="head">
+            <div class="org">iMessenger</div>
+            <div class="buttons">
+                <a href="./landing.html"><button class="button">Home</button></a>
+                <a id="logout"><button class="button">Log Out</button></a>
+            </div>
+        </section>
+
+        <span id="logout-error" class="logout-error"></span>
+        <span id="session-expired" class="session-expired"></span>
+
+        <section class="user-profile">
+            <div class="user-img-wrap">
+                <img class="user-img" src="../assets/images/test.jpg" alt="">
+            </div>
+            <span class="user-name" id="user-name"></span>
+        </section>
+
+        <section class="notifications-section">
+            <h3>Notifications</h3>
+            <div class="notifications-list" id="notifications"></div>
+        </section>
+
+
+        <section class="friends-section">
+            <div class="friends">
+                <h3>Friends</h3>
+                <div class="friends-list" id="friends-list"></div>
+            </div>
+
+            <div class="friend-requests">
+                <div class="received-friend-requests">
+                    <h3>Received Friend Requests</h3>
+                    <div class="friends-list" id="received-list"></div>
+                </div>
+
+                
+                <div class="sent-friend-requests">
+                    <h3>Sent Friend Requests</h3>
+                    <div class="friends-list" id="sent-list"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="middle">
+            <p class="heading">Connect With The Community 🤩</p>
+        </section>
+        
+
+        <section class="community" id="community">
+            <div class="gif-wrap">
+                <img src="../assets/images/loader.gif" alt="" class="gif">
+            </div>
+        </section>
+    </div>
+    <script src="../logic/utils/jwt-decode.js"></script>
+    <script src="../logic/dashboard.js"></script>
+</body>
+</html>

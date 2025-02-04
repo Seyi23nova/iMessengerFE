@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../styles/signup.css">
+</head>
+<body>
+    <div class="wrap">
+        <section class="head">
+            <div class="org">iMessenger - Sign Up</div>
+            <div class="buttons">
+                <a href="./login.html"> <button class="button">Log In</button> </a>
+                <a href="./landing.html">Home</a>
+            </div>
+        </section>
+
+        <section class="middle">
+            <p class="heading">Introducing The Community 🤩</p>
+            <p class="paragraph">
+                iMessenger allows you to connect with friends through
+                real-time messaging; share photos, videos and files
+                seamlessly. Sign Up to join the community!
+            </p>
+        </section>
+
+        <form class="form" id="signupForm">
+            <div class="form-section">
+                <label for="name" class="label">Profile Name</label>
+                <input type="text" id="name" class="input" placeholder="Your Name" required name="name">
+            </div>
+
+            <div class="form-section">
+                <label for="email" class="label">Email</label>
+                <input type="email" id="email" class="input" placeholder="Your Email" required name="email">
+            </div>
+
+            <div class="form-section">
+                <label for="password" class="label">Password</label>
+                <input type="password"  id="password" class="input" placeholder="Password" required name="password">
+            </div>
+    
+            <div class="form-section">
+                <label for="location" class="label">Location</label>
+                <input type="text" id="location" class="input" placeholder="e.g, Lagos, Nigeria" required name="location">
+            </div>
+    
+            <div class="form-section">
+                <label for="interests" class="label">Interests</label>
+                <input type="text" id="interests" class="input" placeholder="e.g swimming, cycling, etc." required name="interests">
+            </div>
+    
+            <div class="form-section">
+                <label for="photo" class="label">Upload a photo</label>
+                <input type="file" id="photo" class="input" accept="image/*" required name="photo">
+            </div>
+    
+            <div class="form-section">
+                <input type="submit" class="input submit" value="Sign Up" id="submit">
+            </div>
+        </form>
+
+        <section id="serverResponse"></section>
+
+    </div>
+    <script src="../logic/auth/signup.js"></script>
+</body>
+</html>

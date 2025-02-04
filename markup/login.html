@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="../styles/login.css">
+</head>
+<body>
+    <div class="wrap">
+        <section class="head">
+            <div class="org">iMessenger - Log In</div>
+            <div class="buttons">
+                <a href="./signup.html"> <button class="button">Sign Up</button> </a>
+                <a href="./landing.html">Home</a>
+            </div>
+        </section>
+
+        <section class="middle">
+            <p class="heading">Introducing The Community 🤩</p>
+            <p class="paragraph">
+                iMessenger allows you to connect with friends through
+                real-time messaging; share photos, videos and files
+                seamlessly. Log In to access your account.
+            </p>
+        </section>
+
+        <form class="form" id="loginForm">
+            <div class="form-section">
+                <label for="email" class="label">Email</label>
+                <input type="email" id="email" class="input" placeholder="Your Email" required name="email">
+            </div>
+
+            <div class="form-section">
+                <label for="password" class="label">Password</label>
+                <input type="password"  id="password" class="input" placeholder="Password" required name="password">
+            </div>
+            
+            <div class="form-section">
+                <input type="submit" class="input submit" value="Login" id="submit">
+            </div>
+        </form>
+
+        <section id="serverResponse"></section>
+    </div>
+    <script src="../logic/auth/login.js"></script>
+</body>
+</html>
