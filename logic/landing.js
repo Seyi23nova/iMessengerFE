@@ -25,7 +25,7 @@ if (accessToken){
 var userData
 var serverResponse
 
-fetch("http://localhost:3000/users", {
+fetch("http://20.55.42.142:1337/users", {
         method: 'GET',
     })
     .then((response) => {
@@ -64,7 +64,7 @@ logoutHeader.append('x-refresh-token', refreshToken)
 logoutButton.addEventListener("click", function(){
 
     //invalidate refresh token in api
-    fetch("http://localhost:3000/auth/logout", {
+    fetch("http://20.55.42.142:1337/auth/logout", {
         method: 'POST',
         headers: logoutHeader
     })

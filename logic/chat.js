@@ -18,7 +18,7 @@ userHeader.append('friend-id', friendID)
 var getMessagesResponse
 var messages
 
-fetch("http://localhost:3000/messages", {
+fetch("http://20.55.42.142:1337/messages", {
     method: 'GET',
     headers: userHeader
 })

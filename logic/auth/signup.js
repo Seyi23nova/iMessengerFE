@@ -23,7 +23,7 @@ signUpForm.addEventListener("submit", function(e){
     submitButton.disabled = true
     submitButton.style.backgroundColor = "rgb(185, 182, 182)"
 
-    fetch("http://localhost:3000/auth/signup", {
+    fetch("http://20.55.42.142:1337/auth/signup", {
         method: 'POST',
         body: formData
     })

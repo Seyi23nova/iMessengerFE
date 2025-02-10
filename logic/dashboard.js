@@ -30,7 +30,7 @@ logoutHeader.append('x-refresh-token', refreshToken)
 
 function logout(){
     //invalidate refresh token in api
-    fetch("http://localhost:3000/auth/logout", {
+    fetch("http://20.55.42.142:1337/auth/logout", {
         method: 'POST',
         headers: logoutHeader
     })
@@ -147,7 +147,7 @@ var userDetailsResponse
 var userDetailsHeader = new Headers()
 userDetailsHeader.append('x-access-token', accessToken)
 
-fetch("http://localhost:3000/userDetails", {
+fetch("http://20.55.42.142:1337/userDetails", {
         method: 'GET',
         headers: userDetailsHeader
     })
@@ -233,7 +233,7 @@ fetch("http://localhost:3000/userDetails", {
 
                         var unfriendResponse
             
-                        fetch("http://localhost:3000/unfriend", {
+                        fetch("http://20.55.42.142:1337/unfriend", {
                             method: 'POST',
                             headers: unfriendHeader
                         })
@@ -302,7 +302,7 @@ fetch("http://localhost:3000/userDetails", {
 
                         var revokeFriendResponse
             
-                        fetch("http://localhost:3000/revokeFriend", {
+                        fetch("http://20.55.42.142:1337/revokeFriend", {
                             method: 'POST',
                             headers: revokeFriendHeader
                         })
@@ -372,7 +372,7 @@ fetch("http://localhost:3000/userDetails", {
 
                         var acceptFriendResponse
                         
-                        fetch("http://localhost:3000/acceptFriend", {
+                        fetch("http://20.55.42.142:1337/acceptFriend", {
                                 method: 'POST',
                                 headers: acceptFriendHeader
                             })
@@ -420,7 +420,7 @@ fetch("http://localhost:3000/userDetails", {
 
                         var rejectFriendResponse
                         
-                        fetch("http://localhost:3000/rejectFriend", {
+                        fetch("http://20.55.42.142:1337/rejectFriend", {
                                 method: 'POST',
                                 headers: rejectFriendHeader
                             })
@@ -467,7 +467,7 @@ var userDataResponse
 var usersDashboardHeader = new Headers()
 usersDashboardHeader.append('x-access-token', accessToken)
 
-fetch("http://localhost:3000/usersDashboard", {
+fetch("http://20.55.42.142:1337/usersDashboard", {
         method: 'GET',
         headers: usersDashboardHeader
     })
@@ -514,7 +514,7 @@ fetch("http://localhost:3000/usersDashboard", {
                     addFriendHeader.append('potential-friend-id', buttonID)
             
             
-                    fetch("http://localhost:3000/addFriend", {
+                    fetch("http://20.55.42.142:1337/addFriend", {
                         method: 'POST',
                         headers: addFriendHeader
                     })

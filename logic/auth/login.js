@@ -26,7 +26,7 @@ loginForm.addEventListener("submit", function(e){
     submitButton.style.backgroundColor = "rgb(185, 182, 182)"
 
     
-    fetch("http://localhost:3000/auth/login", {
+    fetch("http://20.55.42.142:1337/auth/login", {
         method: 'POST',
         body: formData
     })
