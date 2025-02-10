@@ -18,7 +18,7 @@ userHeader.append('friend-id', friendID)
 var getMessagesResponse
 var messages
 
-fetch("http://20.55.42.142:1337/messages", {
+fetch("http://imessenger.eastus.cloudapp.azure.com:1337/messages", {
     method: 'GET',
     headers: userHeader
 })
