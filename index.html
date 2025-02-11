@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iMessenger - landing</title>
+    <link rel="stylesheet" href="./styles/landing.css">
+</head>
+<body>
+    <div class="wrap">
+        <section class="head">
+            <div class="org">iMessenger</div>
+            <div class="buttons">
+                <a href="./markup/login.html" id="login"> <button class="button">Log In</button> </a>
+                <a href="./markup/signup.html" id="signup"> <button class="button">Sign Up</button> </a>
+                <a href="./markup/dashboard.html" id="dashboard"> <button class="button">Dashboard</button> </a>
+                <a id="logout"><button class="button">Log Out</button></a>
+            </div>
+        </section>
+
+        <span id="logout-error" class="logout-error"></span>
+
+        <section class="middle">
+            <p class="heading">Introducing The Community 🤩</p>
+            <p class="paragraph">
+                iMessenger allows you to connect with friends through
+                real-time messaging; share photos, videos and files
+                seamlessly. Sign Up to join the community!
+            </p>
+        </section>
+
+        <section class="community" id="community">
+            <div class="gif-wrap">
+                <img src="./assets/images/loader.gif" alt="" class="gif">
+            </div>
+        </section>
+    </div>
+    <script src="./logic/landing.js"></script>
+</body>
+</html>
