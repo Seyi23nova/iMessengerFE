@@ -15,37 +15,26 @@
             <div class="friend-img-wrap">
                 <img class="friend-img" src="../assets/images/test.jpg" alt="">
             </div>
-            <span class="friend-name" id="friend-name">Barnabas Babatunde</span>
+            <span class="friend-name" id="friend-name"></span>
         </section>
 
 
         <h3 class="messages-heading">Chats</h3>
-        <section class="messages">
-            <div class="message">lorem ipsum dolor</div>
-            <div class="message">lorem ipsum dolor</div>
-            <div class="message">lorem ipsum dolor</div>
-            <div class="message">lorem ipsum dolor</div>
-            <div class="message">lorem ipsum dolor</div>
-            <div class="message">lorem ipsum dolor</div>
-            <div class="message">lorem ipsum dolor</div>
-            <div class="message">lorem ipsum dolor</div>
-            <div class="message">lorem ipsum dolor</div>
-            <div class="message">lorem ipsum dolor</div>
-            <div class="message">lorem ipsum dolor</div>
-            <div class="message">lorem ipsum dolor</div>
-            <div class="message">lorem ipsum dolor</div>
-            <div class="message">lorem ipsum dolor</div>
-            <div class="message">lorem ipsum dolor</div>
-            <div class="message">lorem ipsum dolor</div>
-            <div class="message">lorem ipsum dolor</div>
-            <div class="message">lorem ipsum dolor</div>
+        <section class="messages" id="messages-container">
         </section>
 
 
-        <form class="form">
-            <textarea name="text" id="message" cols="30" rows="10" class="text-message" placeholder="send a message"></textarea>
-            <button class="send-button" id="send">send</button>
+        <form class="form" id="sendMessageForm">
+            <div class="form-section">
+                <label for="message" class="label"></label>
+                <input type="text" id="text-message" class="input" placeholder="Message" required name="message">
+            </div>
+
+            <div class="form-section">
+                <input type="submit" class="input submit" value="send" id="send">
+            </div>
         </form>
+        <section id="serverResponse"></section>
     </div>
 
     <script src="../logic/chat.js"></script>

@@ -1,3 +1,5 @@
+//Host: imessenger.eastus.cloudapp.azure.com
+
 var loginForm = document.getElementById("loginForm")
 var serverResponseContainer = document.getElementById("serverResponse")
 var submitButton = document.getElementById("submit")
@@ -26,7 +28,7 @@ loginForm.addEventListener("submit", function(e){
     submitButton.style.backgroundColor = "rgb(185, 182, 182)"
 
     
-    fetch("http://imessenger.eastus.cloudapp.azure.com:1337/auth/login", {
+    fetch("http://onlinemessenger.eastus.cloudapp.azure.com:1337/auth/login", {
         method: 'POST',
         body: formData
     })
@@ -43,6 +45,7 @@ loginForm.addEventListener("submit", function(e){
 
                 sessionStorage.setItem('accessToken', responseData.accessToken)
                 sessionStorage.setItem('refreshToken', responseData.refreshToken)
+
 
                 // redirect to user dashboard page
                 window.location.href = "../markup/dashboard.html"

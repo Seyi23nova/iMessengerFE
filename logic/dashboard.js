@@ -1,5 +1,5 @@
 var communitySection = document.getElementById("community")
-var usernameSection = document.getElementById("user-name")
+// var usernameSection = document.getElementById("user-name")
 var logoutButton = document.getElementById("logout")
 var logoutError = document.getElementById("logout-error")
 var sessionExpired = document.getElementById("session-expired")
@@ -30,7 +30,7 @@ logoutHeader.append('x-refresh-token', refreshToken)
 
 function logout(){
     //invalidate refresh token in api
-    fetch("http://imessenger.eastus.cloudapp.azure.com:1337/auth/logout", {
+    fetch("http://onlinemessenger.eastus.cloudapp.azure.com:1337/auth/logout", {
         method: 'POST',
         headers: logoutHeader
     })
@@ -147,7 +147,7 @@ var userDetailsResponse
 var userDetailsHeader = new Headers()
 userDetailsHeader.append('x-access-token', accessToken)
 
-fetch("http://imessenger.eastus.cloudapp.azure.com:1337/userDetails", {
+fetch("http://onlinemessenger.eastus.cloudapp.azure.com:1337/userDetails", {
         method: 'GET',
         headers: userDetailsHeader
     })
@@ -170,7 +170,6 @@ fetch("http://imessenger.eastus.cloudapp.azure.com:1337/userDetails", {
                 } = userDetails.details
     
 
-                usernameSection.innerHTML = `${name}`
 
 
                 notificationsSection.innerHTML = ''
@@ -233,7 +232,7 @@ fetch("http://imessenger.eastus.cloudapp.azure.com:1337/userDetails", {
 
                         var unfriendResponse
             
-                        fetch("http://imessenger.eastus.cloudapp.azure.com:1337/unfriend", {
+                        fetch("http://onlinemessenger.eastus.cloudapp.azure.com:1337/unfriend", {
                             method: 'POST',
                             headers: unfriendHeader
                         })
@@ -302,7 +301,7 @@ fetch("http://imessenger.eastus.cloudapp.azure.com:1337/userDetails", {
 
                         var revokeFriendResponse
             
-                        fetch("http://imessenger.eastus.cloudapp.azure.com:1337/revokeFriend", {
+                        fetch("http://onlinemessenger.eastus.cloudapp.azure.com:1337/revokeFriend", {
                             method: 'POST',
                             headers: revokeFriendHeader
                         })
@@ -372,7 +371,7 @@ fetch("http://imessenger.eastus.cloudapp.azure.com:1337/userDetails", {
 
                         var acceptFriendResponse
                         
-                        fetch("http://imessenger.eastus.cloudapp.azure.com:1337/acceptFriend", {
+                        fetch("http://onlinemessenger.eastus.cloudapp.azure.com:1337/acceptFriend", {
                                 method: 'POST',
                                 headers: acceptFriendHeader
                             })
@@ -420,7 +419,7 @@ fetch("http://imessenger.eastus.cloudapp.azure.com:1337/userDetails", {
 
                         var rejectFriendResponse
                         
-                        fetch("http://imessenger.eastus.cloudapp.azure.com:1337/rejectFriend", {
+                        fetch("http://onlinemessenger.eastus.cloudapp.azure.com:1337/rejectFriend", {
                                 method: 'POST',
                                 headers: rejectFriendHeader
                             })
@@ -452,6 +451,9 @@ fetch("http://imessenger.eastus.cloudapp.azure.com:1337/userDetails", {
                             })
                         
                 })
+            } else {
+                sessionStorage.removeItem('accessToken')
+                window.location.href = "../markup/login.html"
             }
         })
 
@@ -467,7 +469,7 @@ var userDataResponse
 var usersDashboardHeader = new Headers()
 usersDashboardHeader.append('x-access-token', accessToken)
 
-fetch("http://imessenger.eastus.cloudapp.azure.com:1337/usersDashboard", {
+fetch("http://onlinemessenger.eastus.cloudapp.azure.com:1337/usersDashboard", {
         method: 'GET',
         headers: usersDashboardHeader
     })
@@ -514,7 +516,7 @@ fetch("http://imessenger.eastus.cloudapp.azure.com:1337/usersDashboard", {
                     addFriendHeader.append('potential-friend-id', buttonID)
             
             
-                    fetch("http://imessenger.eastus.cloudapp.azure.com:1337/addFriend", {
+                    fetch("http://onlinemessenger.eastus.cloudapp.azure.com:1337/addFriend", {
                         method: 'POST',
                         headers: addFriendHeader
                     })
