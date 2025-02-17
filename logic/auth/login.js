@@ -28,7 +28,7 @@ loginForm.addEventListener("submit", function(e){
     submitButton.style.backgroundColor = "rgb(185, 182, 182)"
 
     
-    fetch("http://localhost:1337/auth/login", {
+    fetch("http://onlinemessenger.eastus.cloudapp.azure.com:1337/auth/login", {
         method: 'POST',
         body: formData
     })
