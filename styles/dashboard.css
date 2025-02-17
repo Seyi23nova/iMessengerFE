@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
@@ -18,7 +18,6 @@ body {
     flex: 90% 0 0;
     margin-top: 25px;
     margin-bottom: 25px;
-    border: 3px solid rgb(182, 177, 177);
     padding-top: 5px;
 }
 
@@ -248,3 +247,165 @@ img {
     width: 100%;
     height: 100%;
 }
+
+/* TABLET */
+@media (min-width: 651px) and (max-width: 980px) {
+    .buttons {
+        flex: 70% 0 0;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .org {
+        font-size: 18px;
+        flex: 30% 0 0;
+    }
+    #login, #signup {
+        padding: 1.5px 3px;
+        flex: 45% 0 0;
+        margin-left: 0;
+        margin-right: 5%;
+    
+    }
+    .button {
+        padding: 1.5px 1px;
+        font-size: 10px;
+    
+    }
+}
+
+/* MOBILE */
+@media (min-width: 0px) and (max-width: 650px) {
+    .notifications-section {
+        width: 90%;
+        margin-left: 2.5%;
+        margin-top: 50px;
+    }
+    .friend {
+        width: 100%;
+        margin-top: 60px;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    .img-container {
+        flex: 40px 0 0;
+        height: 40px;
+        clip-path: circle()
+    }
+    
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    .name {
+        font-size: 13px;
+        margin-left: 5px;
+    }
+    
+    .unfriend-button,
+    .chat-button,
+    .revoke-button,
+    .accept-button,
+    .reject-button
+     {
+        padding: 2px 2.5px;
+        flex: 50% 0 0;
+        margin-left: 0%;
+        margin-right: 50%;
+        margin-top: 5px;
+    }
+
+    .org {
+        font-size: 18px;
+        flex: 50% 0 0;
+    }
+    
+    .buttons {
+        flex: 50% 0 0;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    #login {
+        padding: 1.5px 3px;
+        flex: 48% 0 0;
+        margin-left: 0;
+        margin-right: 0;
+    
+    }
+    #signup {
+        padding: 1.5px 3px;
+        flex: 48% 0 0;
+        margin-left: 4%;
+        margin-right: 0;
+    
+    }
+    .button {
+        padding: 1.5px 1px;
+        margin-left: 0;
+    
+    }
+
+    .heading {
+        font-size: 15px;
+    }
+    
+    .paragraph {
+        margin-top: 30px;
+        font-size: 12px;
+    }
+
+    .friends {
+        flex: 95% 0 0;
+        border: 3px solid rgb(182, 177, 177);
+        border-left: 0px;
+        margin-right: 5%;
+        margin-left: 0;
+    }
+
+    .friend-requests {
+        flex: 95% 0 0;
+        margin-left: 0;
+        margin-right: 5%;
+        border: 3px solid rgb(182, 177, 177);
+        border-left: 0px;
+    }
+
+    .community {
+        width: 97.5%;
+        margin-left: 2.5%;
+        margin-right: 0;
+        margin-top: 80px;
+        display: flex;
+        flex-flow: row wrap;
+    
+    }
+    .profile {
+        flex: 100% 0 0;
+        margin-left: 0;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        margin-bottom: 70px;
+        cursor: pointer;
+    }
+    .image-wrap {
+        flex: 55% 0 0;
+        margin-right: 5%;
+        height: 150px;
+    }
+    
+    .img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .details {
+        flex: 35% 0 0;
+        margin-right: 5%;
+    }
+    .add-friend{
+        padding: 1.5px 2px;
+        margin-top: 5px;
+    }
+}
+

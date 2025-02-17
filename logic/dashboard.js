@@ -30,7 +30,7 @@ logoutHeader.append('x-refresh-token', refreshToken)
 
 function logout(){
     //invalidate refresh token in api
-    fetch("http://onlinemessenger.eastus.cloudapp.azure.com:1337/auth/logout", {
+    fetch("http://localhost:1337/auth/logout", {
         method: 'POST',
         headers: logoutHeader
     })
@@ -147,7 +147,7 @@ var userDetailsResponse
 var userDetailsHeader = new Headers()
 userDetailsHeader.append('x-access-token', accessToken)
 
-fetch("http://onlinemessenger.eastus.cloudapp.azure.com:1337/userDetails", {
+fetch("http://localhost:1337/userDetails", {
         method: 'GET',
         headers: userDetailsHeader
     })
@@ -232,7 +232,7 @@ fetch("http://onlinemessenger.eastus.cloudapp.azure.com:1337/userDetails", {
 
                         var unfriendResponse
             
-                        fetch("http://onlinemessenger.eastus.cloudapp.azure.com:1337/unfriend", {
+                        fetch("http://localhost:1337/unfriend", {
                             method: 'POST',
                             headers: unfriendHeader
                         })
@@ -301,7 +301,7 @@ fetch("http://onlinemessenger.eastus.cloudapp.azure.com:1337/userDetails", {
 
                         var revokeFriendResponse
             
-                        fetch("http://onlinemessenger.eastus.cloudapp.azure.com:1337/revokeFriend", {
+                        fetch("http://localhost:1337/revokeFriend", {
                             method: 'POST',
                             headers: revokeFriendHeader
                         })
@@ -371,7 +371,7 @@ fetch("http://onlinemessenger.eastus.cloudapp.azure.com:1337/userDetails", {
 
                         var acceptFriendResponse
                         
-                        fetch("http://onlinemessenger.eastus.cloudapp.azure.com:1337/acceptFriend", {
+                        fetch("http://localhost:1337/acceptFriend", {
                                 method: 'POST',
                                 headers: acceptFriendHeader
                             })
@@ -419,7 +419,7 @@ fetch("http://onlinemessenger.eastus.cloudapp.azure.com:1337/userDetails", {
 
                         var rejectFriendResponse
                         
-                        fetch("http://onlinemessenger.eastus.cloudapp.azure.com:1337/rejectFriend", {
+                        fetch("http://localhost:1337/rejectFriend", {
                                 method: 'POST',
                                 headers: rejectFriendHeader
                             })
@@ -469,7 +469,7 @@ var userDataResponse
 var usersDashboardHeader = new Headers()
 usersDashboardHeader.append('x-access-token', accessToken)
 
-fetch("http://onlinemessenger.eastus.cloudapp.azure.com:1337/usersDashboard", {
+fetch("http://localhost:1337/usersDashboard", {
         method: 'GET',
         headers: usersDashboardHeader
     })
@@ -516,7 +516,7 @@ fetch("http://onlinemessenger.eastus.cloudapp.azure.com:1337/usersDashboard", {
                     addFriendHeader.append('potential-friend-id', buttonID)
             
             
-                    fetch("http://onlinemessenger.eastus.cloudapp.azure.com:1337/addFriend", {
+                    fetch("http://localhost:1337/addFriend", {
                         method: 'POST',
                         headers: addFriendHeader
                     })

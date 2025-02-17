@@ -25,7 +25,7 @@ if (accessToken){
 var userData
 var serverResponse
 
-fetch("http://onlinemessenger.eastus.cloudapp.azure.com:1337/users", {
+fetch("http://localhost:1337/users", {
         method: 'GET',
     })
     .then((response) => {
@@ -64,7 +64,7 @@ logoutHeader.append('x-refresh-token', refreshToken)
 logoutButton.addEventListener("click", function(){
 
     //invalidate refresh token in api
-    fetch("http://onlinemessenger.eastus.cloudapp.azure.com:1337/auth/logout", {
+    fetch("http://localhost:1337/auth/logout", {
         method: 'POST',
         headers: logoutHeader
     })

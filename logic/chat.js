@@ -28,7 +28,7 @@ userHeader.append('friend-id', friendID)
 var getMessagesResponse
 var messages
 
-fetch("http://onlinemessenger.eastus.cloudapp.azure.com:1337/messages", {
+fetch("http://localhost:1337/messages", {
     method: 'GET',
     headers: userHeader
 })
@@ -78,7 +78,7 @@ sendMessageForm.addEventListener("submit",
 
         var formData = new FormData(e.target)
 
-        fetch("http://onlinemessenger.eastus.cloudapp.azure.com:1337/messages/sendMessage", {
+        fetch("http://localhost:1337/messages/sendMessage", {
             method: 'POST',
             headers: messageHeader,
             body: formData
